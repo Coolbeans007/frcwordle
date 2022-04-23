@@ -11,51 +11,50 @@ export function About() {
           <i>Wordle</i>
         </a>{" "}
         by <a href="https://twitter.com/powerlanguish">powerlanguage</a>, which
-        I think is based on the TV show <i>Lingo</i>.
+        This remake uses frc team numbers from world, you can find the teams at <a href="https://www.thebluealliance.com/">thebluealliance</a>.
       </p>
       <p>
-        You get {maxGuesses} tries to guess a target word.
+        You get {maxGuesses} tries to guess a target number.
         <br />
-        After each guess, you get Mastermind-style feedback.
       </p>
       <hr />
       <Row
         rowState={RowState.LockedIn}
         wordLength={4}
         cluedLetters={[
-          { clue: Clue.Absent, letter: "w" },
-          { clue: Clue.Absent, letter: "o" },
-          { clue: Clue.Correct, letter: "r" },
-          { clue: Clue.Elsewhere, letter: "d" },
+          { clue: Clue.Absent, letter: "1" },
+          { clue: Clue.Absent, letter: "1" },
+          { clue: Clue.Correct, letter: "6" },
+          { clue: Clue.Elsewhere, letter: "2" },
         ]}
       />
       <p>
-        <b>W</b> and <b>O</b> aren't in the target word at all.
+        <b>2</b> and <b>4</b> aren't in the target number at all.
       </p>
       <p>
-        <b className={"green-bg"}>R</b> is correct! The third letter is{" "}
-        <b className={"green-bg"}>R</b>
+        <b className={"green-bg"}>6</b> is correct! The third letter is{" "}
+        <b className={"green-bg"}>6</b>
         .<br />
-        <strong>(There may still be a second R in the word.)</strong>
+        <strong>(There may still be a second 6 in the number.)</strong>
       </p>
       <p>
-        <b className={"yellow-bg"}>D</b> occurs <em>elsewhere</em> in the target
-        word.
+        <b className={"yellow-bg"}>2</b> occurs <em>elsewhere</em> in the target
+        number.
         <br />
         <strong>(Perhaps more than once. 🤔)</strong>
       </p>
       <hr />
       <p>
-        Let's move the <b>D</b> in our next guess:
+        Let's move the <b>8</b> in our next guess:
       </p>
       <Row
         rowState={RowState.LockedIn}
         wordLength={4}
         cluedLetters={[
-          { clue: Clue.Correct, letter: "d" },
-          { clue: Clue.Correct, letter: "a" },
-          { clue: Clue.Correct, letter: "r" },
-          { clue: Clue.Absent, letter: "k" },
+          { clue: Clue.Correct, letter: "2" },
+          { clue: Clue.Correct, letter: "4" },
+          { clue: Clue.Correct, letter: "6" },
+          { clue: Clue.Absent, letter: "9" },
         ]}
         annotation={"So close!"}
       />
@@ -63,24 +62,24 @@ export function About() {
         rowState={RowState.LockedIn}
         wordLength={4}
         cluedLetters={[
-          { clue: Clue.Correct, letter: "d" },
-          { clue: Clue.Correct, letter: "a" },
-          { clue: Clue.Correct, letter: "r" },
-          { clue: Clue.Correct, letter: "t" },
+          { clue: Clue.Correct, letter: "2" },
+          { clue: Clue.Correct, letter: "4" },
+          { clue: Clue.Correct, letter: "6" },
+          { clue: Clue.Correct, letter: "8" },
         ]}
         annotation={"Got it!"}
       />
       <p>
-        Report issues{" "}
+        {/* Report issues{" "}
         <a href="https://github.com/lynn/hello-wordl/issues">here</a>, or tweet{" "}
-        <a href="https://twitter.com/chordbug">@chordbug</a>.
+        <a href="https://twitter.com/chordbug">@chordbug</a>. */}
       </p>
-      <p>
+      {/* <p>
         This game will be free and ad-free forever,
         <br />
         but you can <a href="https://ko-fi.com/chordbug">buy me a coffee</a> if
         you'd like.
-      </p>
+      </p> */}
     </div>
   );
 }

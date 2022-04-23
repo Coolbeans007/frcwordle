@@ -31,10 +31,10 @@ interface GameProps {
   keyboardLayout: string;
 }
 
-const targets = targetList.slice(0, targetList.indexOf("murky") + 1); // Words no rarer than this one
+const targets = targetList // Words no rarer than this one
 const minLength = 4;
-const defaultLength = 5;
-const maxLength = 11;
+const defaultLength = 4;
+const maxLength = 4;
 const limitLength = (n: number) =>
   n >= minLength && n <= maxLength ? n : defaultLength;
 
@@ -164,7 +164,7 @@ function Game(props: GameProps) {
       return;
     }
     if (guesses.length === props.maxGuesses) return;
-    if (/^[a-z]$/i.test(key)) {
+    if (/^[0-9]$/i.test(key)) {
       setCurrentGuess((guess) =>
         (guess + key.toLowerCase()).slice(0, wordLength)
       );
@@ -178,7 +178,7 @@ function Game(props: GameProps) {
         setHint("Too short");
         return;
       }
-      if (!dictionary.includes(currentGuess)) {
+      if (isNaN(Number(currentGuess))) {
         setHint("Not a valid word");
         return;
       }
@@ -261,7 +261,7 @@ function Game(props: GameProps) {
   return (
     <div className="Game" style={{ display: props.hidden ? "none" : "block" }}>
       <div className="Game-options">
-        <label htmlFor="wordLength">Letters:</label>
+        <label htmlFor="wordLength">Numbers:</label>
         <input
           type="range"
           min={minLength}
@@ -281,7 +281,7 @@ function Game(props: GameProps) {
             setCurrentGuess("");
             setTarget(randomTarget(length));
             setWordLength(length);
-            setHint(`${length} letters`);
+            setHint(`${length} numbers`);
           }}
         ></input>
         <button

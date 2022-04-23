@@ -43,7 +43,7 @@ function App() {
   const [difficulty, setDifficulty] = useSetting<number>("difficulty", 0);
   const [keyboard, setKeyboard] = useSetting<string>(
     "keyboard",
-    "qwertyuiop-asdfghjkl-BzxcvbnmE"
+    "B0123456789E"
   );
   const [enterLeft, setEnterLeft] = useSetting<boolean>("enter-left", false);
 
@@ -78,9 +78,8 @@ function App() {
             fontStyle: difficulty > 1 ? "italic" : "inherit",
           }}
         >
-          hell
+          frc wordle
         </span>
-        o wordl
       </h1>
       <div className="top-right">
         {page !== "game" ? (
@@ -100,9 +99,9 @@ function App() {
           visibility: page === "game" ? "visible" : "hidden",
         }}
       >
-        <a href={seed ? "?random" : "?seed=" + todaySeed}>
+        {/* <a href={seed ? "?random" : "?seed=" + todaySeed}>
           {seed ? "Random" : "Today's"}
-        </a>
+        </a> */}
       </div>
       {page === "about" && <About />}
       {page === "settings" && (
@@ -148,15 +147,15 @@ function App() {
                 {
                   [
                     `Guesses must be valid dictionary words.`,
-                    `Wordle's "Hard Mode". Green letters must stay fixed, and yellow letters must be reused.`,
-                    `An even stricter Hard Mode. Yellow letters must move away from where they were clued, and gray clues must be obeyed.`,
+                    `Wordle's "Hard Mode". Green numbers must stay fixed, and yellow numbers must be reused.`,
+                    `An even stricter Hard Mode. Yellow numbers must move away from where they were clued, and gray clues must be obeyed.`,
                   ][difficulty]
                 }
               </div>
             </div>
           </div>
           <div className="Settings-setting">
-            <label htmlFor="keyboard-setting">Keyboard layout:</label>
+            {/* <label htmlFor="keyboard-setting">Keyboard layout:</label>
             <select
               name="keyboard-setting"
               id="keyboard-setting"
@@ -176,7 +175,7 @@ function App() {
               checked={enterLeft}
               onChange={() => setEnterLeft((x: boolean) => !x)}
             />
-            <label htmlFor="enter-left-setting">"Enter" on left side</label>
+            <label htmlFor="enter-left-setting">"Enter" on left side</label> */}
           </div>
         </div>
       )}
