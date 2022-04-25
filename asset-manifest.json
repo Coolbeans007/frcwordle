@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FRCwordl/static/css/main.2da491ca.css",
-    "main.js": "/FRCwordl/static/js/main.05c3b666.js",
-    "static/js/787.b3f9d252.chunk.js": "/FRCwordl/static/js/787.b3f9d252.chunk.js",
-    "index.html": "/FRCwordl/index.html",
-    "main.2da491ca.css.map": "/FRCwordl/static/css/main.2da491ca.css.map",
-    "main.05c3b666.js.map": "/FRCwordl/static/js/main.05c3b666.js.map",
-    "787.b3f9d252.chunk.js.map": "/FRCwordl/static/js/787.b3f9d252.chunk.js.map"
+    "main.css": "/frcwordle/static/css/main.2da491ca.css",
+    "main.js": "/frcwordle/static/js/main.fe77e5bf.js",
+    "static/js/787.b3f9d252.chunk.js": "/frcwordle/static/js/787.b3f9d252.chunk.js",
+    "index.html": "/frcwordle/index.html",
+    "main.2da491ca.css.map": "/frcwordle/static/css/main.2da491ca.css.map",
+    "main.fe77e5bf.js.map": "/frcwordle/static/js/main.fe77e5bf.js.map",
+    "787.b3f9d252.chunk.js.map": "/frcwordle/static/js/787.b3f9d252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2da491ca.css",
-    "static/js/main.05c3b666.js"
+    "static/js/main.fe77e5bf.js"
   ]
 }
