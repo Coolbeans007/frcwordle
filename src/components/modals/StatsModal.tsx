@@ -10,6 +10,7 @@ import {
   GUESS_DISTRIBUTION_TEXT,
   NEW_WORD_TEXT,
   SHARE_TEXT,
+  RELOAD,
 } from '../../constants/strings'
 
 type Props = {
@@ -82,18 +83,10 @@ export const StatsModal = ({
             type="button"
             className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
             onClick={() => {
-              shareStatus(
-                solution,
-                guesses,
-                isGameLost,
-                isHardMode,
-                isDarkMode,
-                isHighContrastMode,
-                handleShareToClipboard
-              )
+              window.location.reload();
             }}
           >
-            {SHARE_TEXT}
+            {RELOAD}
           </button>
         </div>
       )}

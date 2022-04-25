@@ -109,9 +109,6 @@ export const Keyboard = ({
         <Key width={60} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        <Key width={60} value="Reset" onClick={onClick}>
-          {RELOAD}
-        </Key>
       </div>
     </div>
   )
