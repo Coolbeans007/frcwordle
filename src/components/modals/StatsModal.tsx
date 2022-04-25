@@ -3,7 +3,7 @@ import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
-import { tomorrow } from '../../lib/words'
+//import { tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
@@ -74,7 +74,7 @@ export const StatsModal = ({
             <h5>{NEW_WORD_TEXT}</h5>
             <Countdown
               className="text-lg font-medium text-gray-900 dark:text-gray-100"
-              date={tomorrow}
+              //date={tomorrow}
               daysInHours={true}
             />
           </div>

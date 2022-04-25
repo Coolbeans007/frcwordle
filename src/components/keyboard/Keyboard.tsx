@@ -1,7 +1,7 @@
 import { getStatuses } from '../../lib/statuses'
 import { Key } from './Key'
 import { useEffect } from 'react'
-import { ENTER_TEXT, DELETE_TEXT } from '../../constants/strings'
+import { ENTER_TEXT, DELETE_TEXT, RELOAD } from '../../constants/strings'
 import { localeAwareUpperCase } from '../../lib/words'
 
 type Props = {
@@ -28,11 +28,14 @@ export const Keyboard = ({
       onEnter()
     } else if (value === 'DELETE') {
       onDelete()
-    } else {
+    }
+    else if (value === 'Reset') {
+        window.location.reload()
+    }
+    else {
       onChar(value)
     }
   }
-
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
       if (e.code === 'Enter') {
@@ -42,7 +45,7 @@ export const Keyboard = ({
       } else {
         const key = localeAwareUpperCase(e.key)
         // TODO: check this test if the range works with non-english letters
-        if (key.length === 1 && key >= 'A' && key <= 'Z') {
+        if (key.length === 1 && key >= '0' && key <= '9') {
           onChar(key)
         }
       }
@@ -102,14 +105,18 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
+           <Key width={60} value="DELETE" onClick={onClick}>
+          {DELETE_TEXT}
+        </Key>
         <Key width={60} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-
-        <Key width={60} value="DELETE" onClick={onClick}>
-          {DELETE_TEXT}
+        <Key width={60} value="Reset" onClick={onClick}>
+        {RELOAD}
         </Key>
+     
       </div>
+      
     </div>
   )
 }
