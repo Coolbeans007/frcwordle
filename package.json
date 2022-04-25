@@ -1,7 +1,7 @@
 {
   "name": "game",
   "version": "0.1.0",
-  "homepage": "https://coolbeans007.github.io/Firstle",
+  "homepage": "https://coolbeans007.github.io/FRCwordl",
   "private": false,
   "scripts": {
     "build": "react-scripts build",
