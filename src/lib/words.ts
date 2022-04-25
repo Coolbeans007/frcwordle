@@ -4,7 +4,6 @@ import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 
-
 export const isWordInWordList = (word: string) => {
   return (
     WORDS.includes(localeAwareLowerCase(word)) ||
@@ -81,8 +80,7 @@ export const getWordOfDay = () => {
   //const start = new Date(epoch)
   const today = new Date()
   today.setHours(0, 0, 0, 0)
-  let index = Math.floor(Math.random() * 9999);
-
+  let index = Math.floor(Math.random() * 9999)
 
   const nextDay = new Date(today)
   nextDay.setDate(today.getDate() + 1)
@@ -90,8 +88,8 @@ export const getWordOfDay = () => {
   return {
     solution: localeAwareUpperCase(WORDS[index % WORDS.length]),
     solutionIndex: index,
-  // tomorrow: nextDay.valueOf(),
+    // tomorrow: nextDay.valueOf(),
   }
 }
 
-export const { solution, solutionIndex} = getWordOfDay()
+export const { solution, solutionIndex } = getWordOfDay()

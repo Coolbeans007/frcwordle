@@ -28,11 +28,9 @@ export const Keyboard = ({
       onEnter()
     } else if (value === 'DELETE') {
       onDelete()
-    }
-    else if (value === 'Reset') {
-        window.location.reload()
-    }
-    else {
+    } else if (value === 'Reset') {
+      window.location.reload()
+    } else {
       onChar(value)
     }
   }
@@ -105,18 +103,16 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
-           <Key width={60} value="DELETE" onClick={onClick}>
+        <Key width={60} value="DELETE" onClick={onClick}>
           {DELETE_TEXT}
         </Key>
         <Key width={60} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
         <Key width={60} value="Reset" onClick={onClick}>
-        {RELOAD}
+          {RELOAD}
         </Key>
-     
       </div>
-      
     </div>
   )
 }
