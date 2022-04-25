@@ -1,7 +1,7 @@
 {
   "name": "game",
   "version": "0.1.0",
-  "homepage": "https://coolbeans007.github.io/FRCwordl",
+  "homepage": "https://coolbeans007.github.io/frcwordle",
   "private": false,
   "scripts": {
     "build": "react-scripts build",
