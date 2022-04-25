@@ -10,8 +10,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the FRC team in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the team number.
+        Guess the FRC team in 6 tries. After each guess, the color of the tiles
+        will change to show how close your guess was to the team number.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -55,7 +55,6 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-       
         <a
           href="https://github.com/Coolbeans007/react-wordle"
           className="underline font-bold"
