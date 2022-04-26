@@ -23,6 +23,12 @@ export const Navbar = ({
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
+           <img
+          className="center"
+          alt="FIRST"
+          src="https://www.firstinspires.org/sites/all/themes/first/assets/images/2020/first-horz-rgb.png"
+          onClick={() =>  window.open("https://www.firstinspires.org/")}
+        />
         <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
         <div className="right-icons">
           <ChartBarIcon
