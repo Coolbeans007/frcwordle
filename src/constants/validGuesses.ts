@@ -6,4 +6,3 @@ while (i <= 9999) {
   i++;
 }
 export const VALID_GUESSES = walkingL;
-console.log(walkingL);

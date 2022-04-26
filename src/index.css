@@ -78,7 +78,7 @@ svg.cursor-pointer:hover {
   position: relative;
   left: 1%;
 }
-.right {
+.dark {
   display: block;
   margin-right: auto;
   width: auto;
