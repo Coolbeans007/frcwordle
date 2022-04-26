@@ -4,24 +4,32 @@ import {
   InformationCircleIcon,
 } from '@heroicons/react/outline'
 import { GAME_TITLE } from '../../constants/strings'
-import { useState, useEffect } from 'react'
 type Props = {
   setIsInfoModalOpen: (value: boolean) => void
   setIsStatsModalOpen: (value: boolean) => void
   setIsSettingsModalOpen: (value: boolean) => void
 }
+
 let theme = localStorage.getItem('theme');
 console.log(theme)
-let element = document.getElementsByClassName('dark') as HTMLCollectionOf<HTMLElement>;
+let element = document.getElementsByClassName('right') as HTMLCollectionOf<HTMLElement>;
+console.log(element)
 function invert(){
   if (element.length != 0) {
-  element[1].style.filter = 'invert(100%)';
-    }
+  element[0].style.filter = 'invert(100%)';
+  }
 }
-  if (theme == 'dark') {
+
+  if (theme === 'dark') {
 invert();
 
   }
+  if (element.length != 0) {
+    element[0].style.right = 'filters: invert(100%)';
+    }
+
+
+
 export const Navbar = ({
   setIsInfoModalOpen,
   setIsStatsModalOpen,
@@ -41,7 +49,7 @@ export const Navbar = ({
           onClick={() =>  window.open("https://www.firstinspires.org/")}
         />
           <img
-          className="dark"
+          className="right"
           alt="logo first"
           src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Wordmark.png"
           onClick={() =>  window.open("https://www.firstinspires.org/")}

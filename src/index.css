@@ -78,12 +78,12 @@ svg.cursor-pointer:hover {
   position: relative;
   left: 1%;
 }
-.dark {
+.right {
   display: block;
   margin-right: auto;
   width: auto;
   height: 225%;
-  filter: invert(0%);
+
 }
 .navbar-content {
   display: flex;
