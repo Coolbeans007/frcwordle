@@ -8,8 +8,5 @@
     "main.8074a48f.js.map": "/frcwordle/static/js/main.8074a48f.js.map",
     "787.b3f9d252.chunk.js.map": "/frcwordle/static/js/787.b3f9d252.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.b4e86d16.css",
-    "static/js/main.8074a48f.js"
-  ]
+  "entrypoints": ["static/css/main.b4e86d16.css", "static/js/main.8074a48f.js"]
 }

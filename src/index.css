@@ -5,24 +5,24 @@
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 250ms;
-  --default-cell-bg-color: theme('colors.white');
-  --default-cell-border-color: theme('colors.black');
-  --default-cell-text-color: theme('colors.black');
-  --absent-cell-bg-color: theme('colors.slate.400');
-  --correct-cell-bg-color: theme('colors.green.400');
-  --present-cell-bg-color: theme('colors.yellow.400');
+  --default-cell-bg-color: theme("colors.white");
+  --default-cell-border-color: theme("colors.black");
+  --default-cell-text-color: theme("colors.black");
+  --absent-cell-bg-color: theme("colors.slate.400");
+  --correct-cell-bg-color: theme("colors.green.400");
+  --present-cell-bg-color: theme("colors.yellow.400");
 }
 
 .dark {
-  --default-cell-bg-color: theme('colors.slate.900');
-  --default-cell-border-color: theme('colors.white');
-  --default-cell-text-color: theme('colors.white');
-  --absent-cell-bg-color: theme('colors.slate.700');
+  --default-cell-bg-color: theme("colors.slate.900");
+  --default-cell-border-color: theme("colors.white");
+  --default-cell-text-color: theme("colors.white");
+  --absent-cell-bg-color: theme("colors.slate.700");
 }
 
 .high-contrast {
-  --correct-cell-bg-color: theme('colors.orange.400');
-  --present-cell-bg-color: theme('colors.cyan.400');
+  --correct-cell-bg-color: theme("colors.orange.400");
+  --present-cell-bg-color: theme("colors.cyan.400");
 }
 
 .cell-fill-animation {
@@ -69,12 +69,21 @@ svg.cursor-pointer:hover {
 .navbar {
   margin-bottom: 2%;
 }
-.center {
+.left {
   display: block;
   margin-left: auto;
-  margin-right: auto;
   width: auto;
   height: 100%;
+  padding-left: 3%;
+  position: relative;
+  left: 1%;
+}
+.right {
+  display: block;
+  margin-right: auto;
+  width: auto;
+  height: 225%;
+  filter: invert(0%);
 }
 .navbar-content {
   display: flex;

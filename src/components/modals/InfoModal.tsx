@@ -1,10 +1,10 @@
-import { Cell } from '../grid/Cell'
-import { BaseModal } from './BaseModal'
+import { Cell } from "../grid/Cell";
+import { BaseModal } from "./BaseModal";
 
 type Props = {
-  isOpen: boolean
-  handleClose: () => void
-}
+  isOpen: boolean;
+  handleClose: () => void;
+};
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
@@ -60,8 +60,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           className="underline font-bold"
         >
           check out the code here
-        </a>{' '}
+        </a>{" "}
       </p>
     </BaseModal>
-  )
-}
+  );
+};
