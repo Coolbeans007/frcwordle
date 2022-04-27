@@ -2,33 +2,13 @@ import {
   ChartBarIcon,
   CogIcon,
   InformationCircleIcon,
-} from '@heroicons/react/outline'
-import { GAME_TITLE } from '../../constants/strings'
+} from "@heroicons/react/outline";
+import { GAME_TITLE } from "../../constants/strings";
 type Props = {
-  setIsInfoModalOpen: (value: boolean) => void
-  setIsStatsModalOpen: (value: boolean) => void
-  setIsSettingsModalOpen: (value: boolean) => void
-}
-
-let theme = localStorage.getItem('theme');
-console.log(theme)
-let element = document.getElementsByClassName('right') as HTMLCollectionOf<HTMLElement>;
-console.log(element)
-function invert(){
-  if (element.length != 0) {
-  element[0].style.filter = 'invert(100%)';
-  }
-}
-
-  if (theme === 'dark') {
-invert();
-
-  }
-  if (element.length != 0) {
-    element[0].style.right = 'filters: invert(100%)';
-    }
-
-
+  setIsInfoModalOpen: (value: boolean) => void;
+  setIsStatsModalOpen: (value: boolean) => void;
+  setIsSettingsModalOpen: (value: boolean) => void;
+};
 
 export const Navbar = ({
   setIsInfoModalOpen,
@@ -41,18 +21,19 @@ export const Navbar = ({
         <InformationCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
-        />
-           <img
-          className="left"
+         
+        > <div>213123123213</div></InformationCircleIcon>
+        <img
+          className="center"
           alt="logo first"
           src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Icon.png"
-          onClick={() =>  window.open("https://www.firstinspires.org/")}
+          onClick={() => window.open("https://www.firstinspires.org/")}
         />
-          <img
-          className="right"
-          alt="logo first"
-          src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Wordmark.png"
-          onClick={() =>  window.open("https://www.firstinspires.org/")}
+  <img
+          className="center"
+          alt="first logo"
+          src="/Users/ntwrkman/Desktop/frcwordl/src/first.png"
+          onClick={() => window.open("https://www.firstinspires.org/")}
         />
         <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
         <div className="right-icons">
@@ -68,5 +49,5 @@ export const Navbar = ({
       </div>
       <hr></hr>
     </div>
-  )
-}
+  );
+};
