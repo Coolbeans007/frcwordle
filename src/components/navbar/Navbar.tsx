@@ -32,7 +32,7 @@ export const Navbar = ({
   <img
           className="center"
           alt="first logo"
-          src="/Users/ntwrkman/Desktop/frcwordl/src/first.png"
+          src="/..//../first.png"
           onClick={() => window.open("https://www.firstinspires.org/")}
         />
         <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
