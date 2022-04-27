@@ -24,15 +24,15 @@ export const Navbar = ({
          
         > <div>213123123213</div></InformationCircleIcon>
         <img
-          className="center"
+          className="left"
           alt="logo first"
           src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Icon.png"
           onClick={() => window.open("https://www.firstinspires.org/")}
         />
   <img
-          className="center"
+          className="right"
           alt="first logo"
-          src="/..//../first.png"
+          src="https://github.com/Coolbeans007/frcwordle/blob/main/src/first.png?raw=true"
           onClick={() => window.open("https://www.firstinspires.org/")}
         />
         <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
