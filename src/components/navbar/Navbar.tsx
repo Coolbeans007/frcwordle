@@ -21,15 +21,14 @@ export const Navbar = ({
         <InformationCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
-         
-        > <div>213123123213</div></InformationCircleIcon>
+        />
         <img
           className="left"
           alt="logo first"
           src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Icon.png"
           onClick={() => window.open("https://www.firstinspires.org/")}
         />
-  <img
+        <img
           className="right"
           alt="first logo"
           src="https://github.com/Coolbeans007/frcwordle/blob/main/src/first.png?raw=true"
