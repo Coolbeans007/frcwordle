@@ -15,3 +15,9 @@ $> cd react-wordle
 $> npm install
 $> npm run start
 ```
+
+### To Run On Pages (SOO much better than docker tbh):
+
+```bash
+$> npm run deploy
+```
