@@ -56,7 +56,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         <a
-          href="https://github.com/Coolbeans007/react-wordle"
+          href="https://github.com/Coolbeans007/frcwordle"
           className="underline font-bold"
         >
           check out the code here
