@@ -1,7 +1,7 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
-const url = "https://www.thebluealliance.com/teams";
+const url = "https://www.thebluealliance.com/teams/";
 
 async function scrapeData() {
   try {
